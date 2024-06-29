@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Aze's Utils
 // @namespace    http://tampermonkey.net/
-// @version      2024-06-29_01
+// @version      2024-06-29_02
 // @description  Aze's Utils
 // @author       azequerobu
 // @match        https://www.roblox.com/*
