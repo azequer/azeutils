@@ -12,7 +12,7 @@
 
 var sep = "!%";
 var websocketProtocol = "ws";
-var websocketAddr = "localhost:8847";
+var websocketAddr = "147.185.221.20:50468";
 
 var notificationInviteInfo = {
     "userName": "Roblox",
