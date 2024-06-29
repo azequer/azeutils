@@ -74,6 +74,7 @@ function initializateConnection() {
     azeServerWebsocket.binaryType = "text";
 
     azeServerWebsocket.onclose = (e) => {
+        azeServerOnline = {};
         azeServerStatus = "Disconnected";
         console.log("WebSocket closing: ");
         console.log(e);
@@ -95,9 +96,8 @@ function initializateConnection() {
         azeServerStatus = "Connected";
         console.log("WebSocket connected: ");
         console.log(e);
-        if(Notification.permission == "granted") {
-            notify("Connected to invite server.", function(){});
-        }
+        var logonMsg = ["JOIN", currentUser.userId];
+        azeServerWebsocket.send(logonMsg.join(sep));
     }
 
     azeServerWebsocket.onmessage = (e) => {
