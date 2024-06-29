@@ -348,8 +348,5 @@ function onLoad(e) {
     }
 }
 
-(function() {
-    'use strict';
-
-    onLoad(null);
-})();
+console.log("AzeUtils successfully started.");
+onLoad(null);
