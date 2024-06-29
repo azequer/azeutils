@@ -1,3 +1,15 @@
+// ==UserScript==
+// @name         Aze's Utils
+// @namespace    http://tampermonkey.net/
+// @version      2024-06-29_01
+// @description  Aze's Utils
+// @author       azequerobu
+// @match        https://www.roblox.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=roblox.com
+// @grant        GM_addElement
+// @sandbox      JavaScript
+// ==/UserScript==
+
 var sep = "!%";
 var websocketProtocol = "ws";
 var websocketAddr = "localhost:8847";
@@ -348,5 +360,8 @@ function onLoad(e) {
     }
 }
 
-console.log("AzeUtils successfully started.");
-onLoad(null);
+(function() {
+    'use strict';
+    
+    onLoad(null);
+})();
