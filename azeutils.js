@@ -264,6 +264,7 @@ function addNewButton(text, callback) {
 }
 
 function onLoad(e) {
+    currentUser = Roblox.CurrentUser;
     initializateConnection() //attempt to connect on page load
     var styel = createElementFromHTML(styleString);
     document.body.appendChild(styel);
@@ -326,7 +327,6 @@ function onLoad(e) {
         }
     });
     var btrbx = window.BTRoblox;
-    currentUser = Roblox.CurrentUser;
 
     if (btrbx == undefined) {
         console.warn("window.BTRoblox is undefined.");
